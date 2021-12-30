@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %} Sign Up {% endblock %}
+
+{% block content %}
+
+<h1 id="options"> Warm Up</h1>
+
+{% for i in range(3) %}
+<h1 id="calculated">{{ warm_up1[0][i].title }}</h1>
+<iframe width="560" height="315" src="{{ warm_up1[0][i].url }}" frameborder="0" allowfullscreen></iframe>
+<h4 id="submit">Description: {{ warm_up1[0][i].description }}</h4>
+<h4 id="margins">Reps: {{ warm_up1[0][i].reps }}</h4>
+
+{% endfor %}
+
+<h1 id="options"> Workout</h1>
+
+{% for i in range(numbers) %}
+<h1 id="calculated">{{ workout[0][i].title }}</h1>
+<iframe width="560" height="315" src="{{ workout[0][i].url }}" frameborder="0" allowfullscreen></iframe>
+<h4 id="submit">Description: {{ workout[0][i].description }}</h4>
+<h4 id="margins">Reps: {{ workout[0][i].reps }}</h4>
+
+{% endfor %} 
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+

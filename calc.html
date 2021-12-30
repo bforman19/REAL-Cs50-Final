@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<body id = "calc">
+    
+    <form method='POST'>
+        <div class="form-group">
+
+        
+
+       
+        <h3 id="options">Options at your disposal:</h3>
+        <h1 id="calculated">wall</h1>
+        <input type="checkbox" name="wall" value="wall">
+        <h1 id="calculated">net</h1>
+        <input type="checkbox" name="net" value="net">
+
+        <h3>Amount of time</h3>
+
+        <select name="time" autofocus class="form-control">
+            <option>30min</option>
+            <option>60min</option>
+            <option>90min</option>
+            <option>120min</option>
+        </select>
+        <h3>Number of balls</h3>
+        <select name="balls" autofocus class="form-control">
+            <option>1-10</option>
+            <option>10-20</option>
+            <option>20+</option>
+        </select>
+        <button id="submit" class="btn btn-primary" type="submit">Submit</button>
+
+        </div>
+    </form>
+</body>
+
+
+{% endblock %}
